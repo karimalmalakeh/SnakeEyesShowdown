@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login To Play</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/intro.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/SnakeEyesLogo.png">
+</head>
+
+<body>
+
+    <header id="mainHeader">
+        <h1>Snake Eyes Showdown</h1>
+        <p class="tagline">Join the game. Fill in your details to start rolling!</p>
+    </header>
+
+    <div class="container py-5 formWrapper">
+        <form id="playerForm" class="formGrid">
+            <div class="mb-3 formGroup">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" name="firstName">
+            </div>
+            <div class="mb-3 formGroup">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" name="lastName">
+            </div>
+            <div class="mb-3 formGroup">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username">
+            </div>
+            <div class="mb-3 formGroup">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
+            </div>
+            <div class="mb-3 formGroup">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" id="city" name="city">
+            </div>
+            <div class="mb-3 formGroup">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" name="email">
+            </div>
+            <div class="mb-3" id="startingAmount">
+                <label for="bank" class="form-label">Starting Amount</label>
+                <input type="number" class="form-control" id="bank" name="bank">
+            </div>
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
+
+    <footer id="footer">
+        <small>
+            <p>© 2025 Snake Eyes Showdown. All rights reserved.</p>
+            <p>
+                <a href="https://www.flaticon.com/free-icons/dice" title="dice icons">Dice icons created by Dimi Kazak -
+                    Flaticon</a>
+            </p>
+            <p>
+                <a href="https://www.flaticon.com/free-icons/monster" title="monster icons">Monster icons created by
+                    Freepik - Flaticon</a>
+            </p>
+            <p>
+                <a href="https://www.flaticon.com/free-icons/coin" title="coin icons">Coin icons created by NajmunNahar
+                    - Flaticon</a>
+            </p>
+            <p>
+                <a href="https://www.flaticon.com/free-icons/dice" title="dice icons">Dice icons created by IconsNova -
+                    Flaticon</a>
+            </p>
+        </small>
+    </footer>
+    <!--jQuery Link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <!--jQuery Validate Link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+        integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="/js/intro.js"></script>
+</body>
+
+</html>

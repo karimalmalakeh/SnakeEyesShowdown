@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Eyes Showdown</title>
+    <link rel="stylesheet" href="/css/game.css">
+    <link rel="icon" type="image/png" href="/images/SnakeEyesLogo.png">
+</head>
+
+<body>
+    <header id="mainHeader">
+        <h1 id="header"></h1>
+    </header>
+    <main id="gameArea">
+        <img src="/images/dice.png" alt="Gold Dice Graphic" id="diceGraphic">
+        <h2 id="h2">Place Your Bet!</h2>
+        <form id="betForm">
+            <label for="betInput">Enter bet amount:</label>
+            <input type="number" id="betInput" min="0" step="1" required>
+            <div id="betError" class="errorText"></div>
+            <label for="targetInput">Enter your target number (3-12):</label>
+            <input type="number" id="targetInput" min="3" max="12" required>
+            <button type="submit">Roll Dice</button>
+        </form>
+
+        <div id="gameFeedback" class="feedback-neutral">
+            <div id="diceResult"></div>
+            <div id="bankRoll"></div>
+            <div id="gameStatus"></div>
+        </div>
+    </main>
+
+
+    <section id="userInfo"></section>
+
+
+    <footer id="footer">
+        <small>
+            <p>© 2025 Snake Eyes Showdown. All rights reserved.</p>
+            <p>
+                <a href="https://www.flaticon.com/free-icons/dice" title="dice icons">Dice icons created by Dimi Kazak -
+                    Flaticon</a>
+            </p>
+            <p>
+                <a href="https://www.flaticon.com/free-icons/monster" title="monster icons">Monster icons created by Freepik - Flaticon</a>
+            </p>
+            <p>
+                <a href="https://www.flaticon.com/free-icons/coin" title="coin icons">Coin icons created by NajmunNahar
+                    - Flaticon</a>
+            </p>
+            <p>
+                <a href="https://www.flaticon.com/free-icons/dice" title="dice icons">Dice icons created by IconsNova -
+                    Flaticon</a>
+            </p>
+        </small>
+    </footer>
+
+    <script src="/js/game.js"></script>
+    <script src="/js/gametest.js"></script>
+</body>
+
+</html>

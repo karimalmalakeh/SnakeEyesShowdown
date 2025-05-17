@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    background: radial-gradient(#09342c, #0f4439);
+    color: gold;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+  }
+
+  #splashText {
+    text-align: center;
+    font-size: 2rem;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+    margin-top: 10vh;
+  }
+
+  @keyframes fadeIn {
+    to { opacity: 1; transform: scale(1.05); }
+  }
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #skipBtn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #f4c430, #d4af37);
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    animation: shimmer 3s infinite;
+  }
+
+  @keyframes shimmer {
+    0% { box-shadow: 0 0 10px #f4c430; }
+    50% { box-shadow: 0 0 30px #f4c430; }
+    100% { box-shadow: 0 0 10px #f4c430; }
+  }
+#snakeEyesDice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px; 
+  height: 100px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.dice {
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+  transform: scale(0.5) rotate(0deg);
+  animation-fill-mode: forwards;
+}
+#dice1 {
+  animation: rollInLeft 3.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
+#dice2 {
+  animation: rollInRight 3.5s ease-out forwards;
+  animation-delay: 1.4s;
+}
+@keyframes rollInLeft {
+  0% {
+    transform: translateX(-300px) rotate(-720deg) scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes rollInRight {
+  0% {
+    transform: translateX(300px) rotate(720deg) scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+  
